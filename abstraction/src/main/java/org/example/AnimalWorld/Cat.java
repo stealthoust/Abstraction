@@ -1,9 +1,12 @@
 package org.example.AnimalWorld;
 
-public class Cat extends Animal{
+public class Cat extends Animal implements AnimalActions{
 
-    public Cat(String color) {
-        this.color=color;
+    public Cat(String color, int age) {
+        super(color, age);
+    }
+
+    public Cat() {
     }
 
     @Override
@@ -25,5 +28,15 @@ public class Cat extends Animal{
     @Override
     public void nonAbstract() {
         System.out.println("Cat non abstract");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Cat moves");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Cat is playing");
     }
 }
