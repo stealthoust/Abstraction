@@ -5,8 +5,8 @@ public class Lion extends Animal implements AnimalActions{
     public Lion() {
     }
 
-    public Lion(String color, int age) {
-        super(color, age);
+    public Lion(String name, int age, String color) {
+        super(name, age, color);
     }
 
     @Override

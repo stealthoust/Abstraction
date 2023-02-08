@@ -2,11 +2,13 @@ package org.example.AnimalWorld;
 
 public class Cat extends Animal implements AnimalActions{
 
-    public Cat(String color, int age) {
-        super(color, age);
-    }
+
 
     public Cat() {
+    }
+
+    public Cat(String name, int age, String color) {
+        super(name, age, color);
     }
 
     @Override

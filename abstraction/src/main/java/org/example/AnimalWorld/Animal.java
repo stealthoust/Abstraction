@@ -2,15 +2,17 @@ package org.example.AnimalWorld;
 
 public abstract class Animal {
 
-    protected String color;
+    protected String name;
     protected int age;
+    protected String color;
 
     public Animal() {
     }
 
-    public Animal(String color, int age) {
-        this.color = color;
+    public Animal(String name, int age, String color) {
+        this.name = name;
         this.age = age;
+        this.color = color;
     }
 
     abstract void makeSound();
@@ -19,7 +21,8 @@ public abstract class Animal {
     public static void test(){
         System.out.println("Test of the static method");
     }
-   public void nonAbstract(){
+
+    public void nonAbstract(){
         System.out.println("Non abstract");
     }
 
@@ -38,5 +41,13 @@ public abstract class Animal {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
